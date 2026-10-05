@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medo Gaming Store | متجر ميدو لشحن الألعاب والخدمات</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- الهيدر والنافبار -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-gamepad"></i> Medo <span>Gaming</span>
+        </div>
+        <nav>
+            <a href="#hero">الرئيسية</a>
+            <a href="#services">الخدمات والألعاب</a>
+            <a href="#about">من نحن</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <!-- الهيرو سكشن -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>مرحباً بك في <span>Medo Gaming Store</span></h1>
+            <p>شحن جميع الألعاب والاشتراكات بأفضل الأسعار الرسمية والسرعة الفائقة!</p>
+            <a href="#services" class="btn">تسوق الآن</a>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section id="services" class="services">
+        <h2>خدماتنا والأسعار الرسمية</h2>
+        <div class="card-grid">
+
+            <!-- ببجي -->
+            <div class="card">
+                <i class="fa-solid fa-crosshairs card-icon"></i>
+                <h3>ببجي موبايل (PUBG Mobile)</h3>
+                <p>شحن شدت UC عن طريق الآيدي فورياً</p>
+                <div class="price">تبدأ من 0.99$ (سعر رسمي)</div>
+                <button class="buy-btn" onclick="orderProduct('ببجي موبايل')">اشحن الآن</button>
+            </div>
+
+            <!-- فري فاير -->
+            <div class="card">
+                <i class="fa-solid fa-fire-flame-curved card-icon"></i>
+                <h3>فري فاير (Free Fire)</h3>
+                <p>شحن جواهر فري فاير مع البونص الرسمي</p>
+                <div class="price">تبدأ من 0.99$ (سعر رسمي)</div>
+                <button class="buy-btn" onclick="orderProduct('فري فاير')">اشحن الآن</button>
+            </div>
+
+            <!-- بلود سترايك -->
+            <div class="card">
+                <i class="fa-solid fa-gun card-icon"></i>
+                <h3>بلود سترايك (Blood Strike)</h3>
+                <p>شحن الذهب والجوائز الحصرية</p>
+                <div class="price">تبدأ من 0.99$ (سعر رسمي)</div>
+                <button class="buy-btn" onclick="orderProduct('بلود سترايك')">اشحن الآن</button>
+            </div>
+
+            <!-- عملات تيك توك -->
+            <div class="card">
+                <i class="fa-brands fa-tiktok card-icon"></i>
+                <h3>عملات تيك توك (TikTok Coins)</h3>
+                <p>شحن كوينز لدعم البث المباشر</p>
+                <div class="price">70 عملة = 0.99$</div>
+                <button class="buy-btn" onclick="orderProduct('عملات تيك توك')">اشحن الآن</button>
+            </div>
+
+            <!-- يوتيوب بريميوم -->
+            <div class="card">
+                <i class="fa-brands fa-youtube card-icon"></i>
+                <h3>يوتيوب بريميوم (YouTube Premium)</h3>
+                <p>اشتراك بدون إعلانات + YouTube Music</p>
+                <div class="price">اشتراك شهري / سنوي رسمي</div>
+                <button class="buy-btn" onclick="orderProduct('يوتيوب بريميوم')">اشترك الآن</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer id="contact">
+        <p>&copy; 2026 Medo Gaming Store. جميع الحقوق محفوظة.</p>
+        <p>تواصل معنا عبر الواتساب للطلبات والدعم الفني</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
