@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medo Gaming Store</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Tahoma, sans-serif;
+    }
+
+    body {
+      background: #0b1020;
+      color: white;
+      line-height: 1.8;
+    }
+
+    header {
+      min-height: 90vh;
+      padding: 25px 8%;
+      background:
+        linear-gradient(rgba(5, 8, 25, .82), rgba(5, 8, 25, .95)),
+        url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      color: #00e5ff;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 18px;
+    }
+
+    nav a:hover {
+      color: #00e5ff;
+    }
+
+    .hero {
+      max-width: 700px;
+      padding: 60px 0;
+    }
+
+    .hero h1 {
+      font-size: clamp(35px, 6vw, 70px);
+      color: #00e5ff;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #e4e8ff;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #00d084;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: .3s;
+    }
+
+    .button:hover {
+      background: #00a968;
+      transform: scale(1.04);
+    }
+
+    section {
+      padding: 65px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #00e5ff;
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #151d38;
+      border: 1px solid #26345d;
+      border-radius: 18px;
+      padding: 25px;
+      text-align: center;
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      border-color: #00e5ff;
+    }
+
+    .card .icon {
+      font-size: 45px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #bfc8e8;
+    }
+
+    .contact {
+      background: #11182e;
+      text-align: center;
+    }
+
+    .contact p {
+      font-size: 19px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #070b16;
+      text-align: center;
+      padding: 20px;
+      color: #aab4d4;
+    }
+
+    .welcome-message {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      max-width: 420px;
+      margin: auto;
+      background: #182444;
+      border: 1px solid #00e5ff;
+      border-radius: 15px;
+      padding: 17px;
+      box-shadow: 0 0 25px rgba(0, 229, 255, .25);
+      z-index: 10;
+      animation: slideUp .6s ease;
+    }
+
+    .welcome-message button {
+      float: left;
+      background: transparent;
+      color: white;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin-right: 0;
+        margin-left: 12px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="home">
+    <nav>
+      <div class="logo">🎮 Medo Gaming Store</div>
+
+      <div>
+        <a href="#home">الرئيسية</a>
+        <a href="#services">الخدمات</a>
+        <a href="#contact">تواصل معنا</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h1>Medo Gaming Store</h1>
+      <p>
+        شحن جميع الألعاب الأونلاين بسرعة وأمان، بالإضافة إلى الاشتراكات
+        الرقمية والخدمات الترفيهية.
+      </p>
+
+      <a class="button"
+         href="https://wa.me/201108302815?text=مرحباً، أريد طلب خدمة من Medo Gaming Store"
+         target="_blank">
+        اطلب الآن عبر واتساب
+      </a>
+    </div>
+  </header>
+
+  <section id="services">
+    <h2 class="section-title">خدماتنا</h2>
+
+    <div class="services">
+      <div class="card">
+        <div class="icon">🔥</div>
+        <h3>Free Fire</h3>
+        <p>شحن جواهر فري فاير لجميع الحسابات.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎯</div>
+        <h3>PUBG Mobile</h3>
+        <p>شحن شدات ببجي بسرعة وبأفضل خدمة.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Blood Strike</h3>
+        <p>شحن العملات والخدمات الخاصة باللعبة.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">▶️</div>
+        <h3>YouTube Premium</h3>
+        <p>اشتراكات يوتيوب بريميوم لفترات مختلفة.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎮</div>
+        <h3>PlayStation Plus</h3>
+        <p>اشتراكات بلايستيشن بلس للألعاب الأونلاين.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💳</div>
+        <h3>خدمات رقمية</h3>
+        <p>اطلب الخدمة التي تحتاجها وسنساعدك فوراً.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">تواصل معنا</h2>
+    <p>للطلب والاستفسار تواصل معنا على واتساب:</p>
+
+    <a class="button"
+       href="https://wa.me/201108302815?text=مرحباً، أريد الاستفسار عن خدماتكم"
+       target="_blank">
+      +20 110 830 2815
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Medo Gaming Store - جميع الحقوق محفوظة
+  </footer>
+
+  <div class="welcome-message" id="welcomeMessage">
+    <button onclick="closeWelcome()">×</button>
+    👋 أهلاً بك في <strong>Medo Gaming Store</strong>!
+    <br>
+    لشحن فري فاير، ببجي، Blood Strike أو طلب اشتراك، تواصل معنا الآن.
+  </div>
+
+  <script>
+    function closeWelcome() {
+      document.getElementById("welcomeMessage").style.display = "none";
+    }
+
+    setTimeout(function () {
+      const message = document.getElementById("welcomeMessage");
+      if (message) {
+        message.style.display = "none";
+      }
+    }, 10000);
+  </script>
+
+</body>
+</html>
